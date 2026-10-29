@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111C20">
+  <meta name="description" content="Política de privacidad de ChabelaSpam 1.0.">
+  <title>Política de privacidad · ChabelaSpam</title>
+  <style>
+    :root {
+      --background: #111C20;
+      --card: #20343A;
+      --accent: #7DE2D1;
+      --text: #F1F7F7;
+      --muted: #B8C9CC;
+      --border: rgba(125, 226, 209, 0.22);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      background:
+        radial-gradient(circle at 85% 0%, rgba(125, 226, 209, 0.09), transparent 30rem),
+        var(--background);
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+
+    .shell {
+      width: min(100% - 2rem, 920px);
+      margin-inline: auto;
+      padding: clamp(2rem, 6vw, 5rem) 0 4rem;
+    }
+
+    .hero {
+      padding: clamp(1.5rem, 5vw, 3.25rem);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(32, 52, 58, 0.98), rgba(32, 52, 58, 0.76));
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
+    h1 { margin: 0; font-size: clamp(2rem, 7vw, 4rem); letter-spacing: -0.045em; }
+    h2 { margin: 0 0 1rem; color: var(--accent); font-size: clamp(1.25rem, 3vw, 1.65rem); }
+    h3 { margin: 1.5rem 0 0.5rem; font-size: 1.05rem; }
+    p { margin: 0.75rem 0; }
+
+    .lede { max-width: 65ch; margin: 1rem 0 0; color: var(--muted); font-size: 1.08rem; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1rem;
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin: 1rem 0;
+    }
+
+    .summary div {
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(32, 52, 58, 0.65);
+    }
+
+    .summary strong { display: block; color: var(--accent); }
+    .summary span { color: var(--muted); font-size: 0.9rem; }
+
+    nav, article section {
+      margin-top: 1rem;
+      padding: clamp(1.25rem, 4vw, 2rem);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--card);
+    }
+
+    nav h2 { font-size: 1rem; }
+    nav ol { columns: 2; gap: 2rem; margin-bottom: 0; padding-left: 1.25rem; }
+    nav li { break-inside: avoid; margin: 0.35rem 0; }
+
+    ul, ol { padding-left: 1.35rem; }
+    li + li { margin-top: 0.35rem; }
+
+    .note {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: rgba(17, 28, 32, 0.42);
+    }
+
+    footer {
+      padding: 2rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      .shell { width: min(100% - 1.25rem, 920px); padding-top: 0.75rem; }
+      .hero, nav, article section { border-radius: 18px; }
+      .summary { grid-template-columns: 1fr; }
+      nav ol { columns: 1; }
+    }
+
+    @media print {
+      :root { color-scheme: light; }
+      body { background: #fff; color: #111; }
+      .shell { width: 100%; padding: 0; }
+      .hero, nav, article section { background: #fff; color: #111; box-shadow: none; break-inside: avoid; }
+      h2, a, .summary strong, .eyebrow { color: #125d54; }
+      .lede, .meta, footer, .summary span { color: #444; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">ChabelaSpam · Privacidad</p>
+      <h1>Política de privacidad</h1>
+      <p class="lede">Cómo ChabelaSpam 1.0 procesa números entrantes, conserva el historial bloqueado y mantiene los datos dentro de tu dispositivo.</p>
+      <ul class="meta" aria-label="Información de la política">
+        <li>Versión de la app: 1.0</li>
+        <li>Actualizada: 29 de octubre de 2026</li>
+        <li>Vigencia: 29 de octubre de 2026</li>
+      </ul>
+    </header>
+
+    <section class="summary" aria-label="Resumen de privacidad">
+      <div><strong>Procesamiento local</strong><span>Los números se evalúan en tu dispositivo.</span></div>
+      <div><strong>Sin seguimiento</strong><span>Sin publicidad, analítica ni SDK de tracking.</span></div>
+      <div><strong>Control del usuario</strong><span>El historial y las reglas pueden eliminarse desde la app.</span></div>
+    </section>
+
+    <nav aria-labelledby="contents-title">
+      <h2 id="contents-title">Contenido</h2>
+      <ol>
+        <li><a href="#alcance">Alcance</a></li>
+        <li><a href="#telefonia">Información telefónica</a></li>
+        <li><a href="#almacenamiento">Datos almacenados</a></li>
+        <li><a href="#finalidad">Finalidad</a></li>
+        <li><a href="#transmision">Transmisión y terceros</a></li>
+        <li><a href="#retencion">Conservación</a></li>
+        <li><a href="#eliminacion">Eliminación</a></li>
+        <li><a href="#rol">Rol de filtrado</a></li>
+        <li><a href="#sistema">Historial de Android</a></li>
+        <li><a href="#backups">Backups</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section id="alcance">
+        <h2>1. Alcance</h2>
+        <p>Esta política explica cómo ChabelaSpam 1.0 accede, utiliza, almacena y elimina información al filtrar llamadas en Android.</p>
+        <p>ChabelaSpam funciona localmente, no requiere una cuenta y no incluye publicidad, analítica, seguimiento ni servicios que transmitan datos del usuario fuera del dispositivo.</p>
+      </section>
+
+      <section id="telefonia">
+        <h2>2. Información telefónica que procesa</h2>
+        <p>Cuando activas ChabelaSpam como aplicación de identificación y filtrado, Android puede entregar el número de una llamada entrante para decidir si debe permitirse o rechazarse.</p>
+        <p>El número se normaliza y se compara con las reglas de prefijos guardadas localmente. Si coincide con una regla activa, ChabelaSpam solicita a Android que rechace la llamada.</p>
+        <p>ChabelaSpam no solicita acceso a tus contactos. Android normalmente presenta al servicio números que no están guardados en contactos cuando la aplicación no tiene ese permiso. Los números de llamadas permitidas no se incorporan al historial interno de ChabelaSpam.</p>
+      </section>
+
+      <section id="almacenamiento">
+        <h2>3. Información almacenada localmente</h2>
+        <h3>Historial de llamadas bloqueadas</h3>
+        <ul>
+          <li>Número telefónico presentado por Android.</li>
+          <li>Fecha y hora del bloqueo.</li>
+          <li>Motivo o regla que produjo el bloqueo.</li>
+        </ul>
+        <h3>Reglas</h3>
+        <p>Se guardan el prefijo, la descripción o motivo y el estado de la regla. La descripción puede contener texto introducido por el usuario.</p>
+        <h3>Preferencia de activación</h3>
+        <p>Se guarda un valor booleano para recordar que aceptaste la advertencia previa a solicitar el rol de filtrado.</p>
+        <p>ChabelaSpam no guarda cuentas, contraseñas, contactos, ubicación, SMS, grabaciones de audio ni identificadores publicitarios.</p>
+      </section>
+
+      <section id="finalidad">
+        <h2>4. Para qué se utilizan los datos</h2>
+        <ul>
+          <li>Aplicar las reglas de bloqueo configuradas por el usuario.</li>
+          <li>Mostrar el historial interno de llamadas bloqueadas.</li>
+          <li>Permitir la consulta y administración de reglas.</li>
+          <li>Recordar que ya se aceptó la advertencia previa al rol.</li>
+        </ul>
+      </section>
+
+      <section id="transmision">
+        <h2>5. Transmisión, compartición y terceros</h2>
+        <p>ChabelaSpam 1.0 no declara permiso de Internet y no incorpora publicidad, analítica, crash reporting ni SDK de seguimiento.</p>
+        <p>Los números, reglas, historial y preferencias se procesan y almacenan localmente. ChabelaSpam no los transmite al desarrollador ni los comparte con terceros.</p>
+        <p>Si una versión futura incorpora servicios externos, esta política deberá actualizarse antes de utilizarlos.</p>
+      </section>
+
+      <section id="retencion">
+        <h2>6. Conservación</h2>
+        <p>El historial y las reglas permanecen guardados localmente sin vencimiento automático. Se conservan hasta que los eliminas desde ChabelaSpam, borras los datos de la aplicación desde Android o desinstalas la app.</p>
+        <p>La preferencia de activación permanece hasta que utilizas la eliminación total, borras los datos de la aplicación o la desinstalas.</p>
+      </section>
+
+      <section id="eliminacion">
+        <h2>7. Cómo eliminar los datos locales</h2>
+        <ol>
+          <li>Abre ChabelaSpam manualmente.</li>
+          <li>En <strong>Más</strong>, abre <strong>Acerca de ChabelaSpam</strong>.</li>
+          <li>Selecciona <strong>Privacidad y datos</strong>.</li>
+          <li>Elige <strong>Eliminar historial</strong>, <strong>Eliminar reglas de prefijos</strong> o <strong>Eliminar todos los datos locales</strong>.</li>
+        </ol>
+        <p>También puedes eliminar reglas individuales desde la pantalla principal. Android permite, además, borrar los datos de la app o desinstalarla.</p>
+        <div class="note"><strong>Importante:</strong> la eliminación total no revoca automáticamente el rol de filtrado. Puedes cambiarlo desde los ajustes de aplicaciones predeterminadas de Android.</div>
+      </section>
+
+      <section id="rol">
+        <h2>8. Rol de filtrado y aplicación Teléfono</h2>
+        <p>ChabelaSpam solicita el rol mediante el selector oficial de Android. El rol permite que Android consulte a ChabelaSpam al recibir una llamada susceptible de filtrado.</p>
+        <p>Las llamadas permitidas continúan siendo atendidas por tu aplicación Teléfono habitual. ChabelaSpam ocupa la función de identificación y filtrado asignada por Android a una aplicación a la vez, por lo que puede reemplazar el filtro antispam que antes realizaba el teléfono o su fabricante.</p>
+      </section>
+
+      <section id="sistema">
+        <h2>9. Historial del sistema Android</h2>
+        <p>El historial interno de ChabelaSpam es independiente del registro de llamadas de Android. Android o el fabricante pueden conservar una llamada rechazada en el historial del sistema.</p>
+        <p>ChabelaSpam no lee, modifica ni elimina ese historial del sistema.</p>
+      </section>
+
+      <section id="backups">
+        <h2>10. Backups y transferencia</h2>
+        <p>Los datos de ChabelaSpam están excluidos de Android Auto Backup y de las reglas de transferencia Android entre dispositivos. Las exclusiones cubren la base de datos, las preferencias y los archivos locales.</p>
+      </section>
+
+      <section id="seguridad">
+        <h2>11. Seguridad local</h2>
+        <p>Los datos se guardan dentro del almacenamiento privado que Android asigna a la aplicación. ChabelaSpam no implementa cifrado propio de campos o de la base de datos.</p>
+        <p>Ningún sistema puede garantizar seguridad absoluta, especialmente en dispositivos comprometidos, modificados o con acceso no autorizado.</p>
+      </section>
+
+      <section>
+        <h2>12. Menores y cambios de esta política</h2>
+        <p>ChabelaSpam está dirigida a un público adulto y no está diseñada ni dirigida específicamente a menores de edad.</p>
+        <p>Esta política deberá actualizarse si cambia la forma en que ChabelaSpam accede, utiliza, almacena, transmite o comparte información. La fecha de actualización se mostrará al comienzo.</p>
+        <p>Los cambios relevantes se publicarán en esta misma página y, cuando corresponda, se informarán dentro de la aplicación.</p>
+      </section>
+
+      <section id="contacto">
+        <h2>13. Contacto</h2>
+        <p>Para consultas sobre privacidad o tratamiento de datos:</p>
+        <p><strong>Amanito Studio</strong><br><a href="mailto:contact.amanito.studio@gmail.com">contact.amanito.studio@gmail.com</a></p>
+      </section>
+    </article>
+
+    <footer>
+      <p>ChabelaSpam 1.0 · Amanito Studio · Política de privacidad</p>
+    </footer>
+  </main>
+</body>
+</html>
